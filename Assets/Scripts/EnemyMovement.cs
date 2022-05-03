@@ -5,9 +5,12 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] List<TileWaypoints> waypointPath = new List<TileWaypoints>();
+    [SerializeField] float enemyMoveSpeed = 1f;
+
     void Start()
     {
-        PrintWaypoints();
+       StartCoroutine(PrintWaypoints());
+        
     }
 
     // Update is called once per frame
@@ -16,11 +19,12 @@ public class EnemyMovement : MonoBehaviour
         
     }
 
-    void PrintWaypoints()
-    {
+    IEnumerator PrintWaypoints()
+    {   
         foreach (TileWaypoints tilewaypoint in waypointPath)
-        {
-            Debug.Log(tilewaypoint.name);
+        {   
+            transform.position = tilewaypoint.transform.position;
+            yield return new WaitForSeconds(enemyMoveSpeed);
         }
     }
 }
