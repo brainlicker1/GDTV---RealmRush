@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class TileWaypoints : MonoBehaviour
 {       
-
+    [SerializeField] GameObject towerPrefab;
     [SerializeField] bool isPlaceable;
          void OnMouseDown(){
              if(isPlaceable){
-                 Debug.Log("Is Placeable");
+                 Instantiate(towerPrefab, transform.position, Quaternion.identity);
              }
             else{
                 Debug.Log("Is not placeable");

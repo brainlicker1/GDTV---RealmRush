@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1462556760918201817, guid: 3882a63e0814c0040a3324ebd14c267c, type: 3}
+      propertyPath: m_text
+      value: 0,0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462556760918201817, guid: 3882a63e0814c0040a3324ebd14c267c, type: 3}
+      propertyPath: m_fontSize
+      value: 50.7
+      objectReference: {fileID: 0}
     - target: {fileID: 1462556762210382708, guid: 3882a63e0814c0040a3324ebd14c267c, type: 3}
       propertyPath: m_Name
       value: TileVarient
@@ -59,6 +67,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -2432090755550338912, guid: e618ab8e55a3ed942a408f4d1b7f896e, type: 3}
+    - target: {fileID: 3276137533464347916, guid: 3882a63e0814c0040a3324ebd14c267c, type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6322304463494749309, guid: 3882a63e0814c0040a3324ebd14c267c, type: 3}
       propertyPath: isPlaceable
       value: 0

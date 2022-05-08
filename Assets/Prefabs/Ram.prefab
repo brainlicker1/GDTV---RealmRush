@@ -105,7 +105,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8514236900367047371}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12, y: 6, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -125,5 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c6d0abd3f5b704d9d5dbe421adc739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPath: []
+  waypointPath:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   enemyMoveSpeed: 1
