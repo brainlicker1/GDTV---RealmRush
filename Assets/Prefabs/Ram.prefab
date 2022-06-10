@@ -91,6 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9035194973122117745}
   - component: {fileID: 3918022719518629966}
+  - component: {fileID: 5620921180867362619}
+  - component: {fileID: 5441386801394729942}
+  - component: {fileID: 1341479318515760714}
   m_Layer: 0
   m_Name: Ram
   m_TagString: Untagged
@@ -125,12 +128,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61c6d0abd3f5b704d9d5dbe421adc739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypointPath:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  waypointPath: []
   enemyMoveSpeed: 1
+--- !u!65 &5620921180867362619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514236900367047371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 4}
+  m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &5441386801394729942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514236900367047371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ad63050e198fe428f7e7c67635e54b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 5
+  currentHealth: 0
+--- !u!114 &1341479318515760714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514236900367047371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b049abdcebeb1bc4aa0729bed859573e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

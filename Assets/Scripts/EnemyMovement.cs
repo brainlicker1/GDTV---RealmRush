@@ -8,13 +8,34 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField][Range(0f,5f)] float enemyMoveSpeed = 1f;
     //[SerializeField] float  travelPercentModifier = 0f;
 
+     void OnEnable() {
+          FindPath();
+         ReturnToStart();
+        StartCoroutine(PrintWaypoints());
+    }
     void Start()
-    {
-       StartCoroutine(PrintWaypoints());
+    {   
+       
+       
+      
         
     }
+    void FindPath(){
+            waypointPath.Clear();
+        GameObject[] waypoints = GameObject.FindGameObjectsWithTag("isPath");
 
-    // Update is called once per frame
+        foreach(GameObject waypoint in waypoints) {
+            waypointPath.Add(waypoint.GetComponent<TileWaypoints>());
+        }
+       // Destroy(gameObject);
+    }
+
+    void ReturnToStart(){
+
+     transform.position = waypointPath[0].transform.position;
+
+    }
+
     void Update()
     {
         
